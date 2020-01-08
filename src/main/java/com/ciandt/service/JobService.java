@@ -5,20 +5,20 @@ package com.ciandt.service;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.ParseException;
 
 import com.ciandt.model.Job;
 import com.ciandt.repository.SchedulingJobs;
 import com.ciandt.utils.JSONUtils;
 
 /**
- * @author helio
- *
+ * This class implements a service from
+ * 
+ * @author Helio Diniz
+ * @version 1.0
  */
 public class JobService {
 
@@ -62,9 +62,12 @@ public class JobService {
 	}
 
 	/**
-	 * @param string
+	 * Gets all job from a JSON file.
+	 * 
+	 * @param filename
+	 *        the file name of a JSON file.
 	 */
-	public void findAllJobs(String filename) {
+	public void getAllJobs(String filename) {
 		
 		Object object = null;
 		try {
@@ -89,7 +92,6 @@ public class JobService {
 				this.jobRepository.clear();
 			}
 		}
-
 	}
 
 	/**

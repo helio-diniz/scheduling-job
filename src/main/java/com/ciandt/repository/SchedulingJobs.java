@@ -85,21 +85,21 @@ public class SchedulingJobs {
 		Long duration = new Long(0);
 
 		for (Job job : this.jobList) {
-			LocalDateTime jobStart = job.getDeadline().minusHours(job.getDuration());
-			if (start.compareTo(jobStart) <= 0 && end.compareTo(job.getDeadline()) >= 0) {
+			if (job.getDeadline() != null && start.compareTo(job.getDeadline()) <= 0 && end.compareTo(job.getDeadline()) >= 0) {	
 				List<Long> jobSequence = null;
 				if (duration == 0L) {
 					jobSequence = new ArrayList<Long>();
 					result.add(jobSequence);
 					duration += job.getDuration();
-				} else if ((duration + job.getDuration()) > 8L) {
+				} else if (Long.compare(duration + job.getDuration(), 8L) > 0) {
 					jobSequence = new ArrayList<Long>();
 					result.add(jobSequence);
-					duration = 0L;
+					duration = job.getDuration();
 				} else {
 					jobSequence = result.get(result.size() - 1);
 					duration += job.getDuration();
 				}
+				
 				jobSequence.add(job.getId());
 			} else {
 				continue;

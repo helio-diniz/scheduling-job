@@ -175,14 +175,14 @@ public class JobTest {
 	 * Tests the organization of a job schedule with three jobs and starting at 11
 	 * o´clock.
 	 */
-	public void organizeASchedulingJobListWithThreeJobsStartingElevenOClock() {
+	public void organizeASchedulingJobListWithThreeJobsStartingHalfPastTwelve() {
 		SchedulingJobs jobs = new SchedulingJobs();
 		jobs.add(new Job(1L, "Importação de arquivos do fundo", "2019-11-10 12:00:00", 2L));
 		jobs.add(new Job(2L, "Importação de dados da Base Legada", "2019-11-11 12:00:00", 4L));
 		jobs.add(new Job(3L, "Importação de dados de integração", "2019-11-11 08:00:00", 6L));
 		assertEquals(3, jobs.size());
 
-		List<List<Long>> schedule = jobs.organize(LocalDateTime.of(2019, 11, 10, 11, 00, 00),
+		List<List<Long>> schedule = jobs.organize(LocalDateTime.of(2019, 11, 10, 12, 30, 00),
 		    LocalDateTime.of(2019, 11, 11, 12, 00, 00));
 
 		assertNotNull(schedule);
