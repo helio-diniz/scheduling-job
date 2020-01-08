@@ -2,9 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ciandt</groupId>
   <artifactId>scheduling-job</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <name>Scheduling Job</name>
-  <description>This project organizes a scheuling job list from a JSON file.</description>
+  <description>This project organizes a scheduling job list from a JSON file.</description>
   
   <dependencies>
 	<dependency>
