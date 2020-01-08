@@ -11,11 +11,11 @@ import java.time.format.DateTimeFormatter;
  */
 public class Job implements Comparable<Job> {
 	/** Job's ID. */
-	private Integer id;
+	private Long id;
 	/** Job's description. */
 	private String description;
 	/** Job's deadline. */
-	private LocalDateTime deadline;
+	private transient LocalDateTime deadline;
 	/** Job's deadline in formatted text. */
 	private String deadlineText;
 	/** Job's estimated duration. */
@@ -33,7 +33,7 @@ public class Job implements Comparable<Job> {
 	 * @param durarion
 	 *        the Job's estimated duration.
 	 */
-	public Job(Integer id, String description, String deadlineText, Long durarion) {
+	public Job(Long id, String description, String deadlineText, Long durarion) {
 		super();
 		this.id = id;
 		this.description = description;
@@ -46,7 +46,7 @@ public class Job implements Comparable<Job> {
 	 * 
 	 * @return the id
 	 */
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
@@ -56,7 +56,7 @@ public class Job implements Comparable<Job> {
 	 * @param id
 	 *          the id to set
 	 */
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

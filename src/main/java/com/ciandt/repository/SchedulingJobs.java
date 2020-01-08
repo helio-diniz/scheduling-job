@@ -78,8 +78,8 @@ public class SchedulingJobs {
 	 * 
 	 * @return the organized schedule.
 	 */
-	public List<List<Integer>> organize(LocalDateTime start, LocalDateTime end) {
-		List<List<Integer>> result = new ArrayList<List<Integer>>();
+	public List<List<Long>> organize(LocalDateTime start, LocalDateTime end) {
+		List<List<Long>> result = new ArrayList<List<Long>>();
 
 		this.sort();
 		Long duration = new Long(0);
@@ -87,13 +87,13 @@ public class SchedulingJobs {
 		for (Job job : this.jobList) {
 			LocalDateTime jobStart = job.getDeadline().minusHours(job.getDuration());
 			if (start.compareTo(jobStart) <= 0 && end.compareTo(job.getDeadline()) >= 0) {
-				List<Integer> jobSequence = null;
+				List<Long> jobSequence = null;
 				if (duration == 0L) {
-					jobSequence = new ArrayList<Integer>();
+					jobSequence = new ArrayList<Long>();
 					result.add(jobSequence);
 					duration += job.getDuration();
 				} else if ((duration + job.getDuration()) > 8L) {
-					jobSequence = new ArrayList<Integer>();
+					jobSequence = new ArrayList<Long>();
 					result.add(jobSequence);
 					duration = 0L;
 				} else {
@@ -106,6 +106,17 @@ public class SchedulingJobs {
 			}
 		}
 		return result;
+	}
+
+	/**
+	 * 
+	 */
+	public void clear() {
+		this.jobList.clear();;
+	}
+
+	public List<Job> getJobList() {
+		return jobList;
 	}
 
 }

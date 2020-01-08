@@ -69,15 +69,15 @@ public class JSONUtils {
 	 * 
 	 * @param inputFilename
 	 *  	  the full path name of the input JSON file.
-	 * @param uutputFilename
+	 * @param outputFilename
 	 *  	  the full path name of the output JSON file.
 	 * @return
 	 */
-	public boolean compare(String inputFilename, String uutputFilename) {
+	public boolean compare(String inputFilename, String outputFilename) {
 		boolean result;
 		try {
 			Object objectJsonIn = this.read(inputFilename);
-			Object objectJsonOut = this.read(uutputFilename);
+			Object objectJsonOut = this.read(outputFilename);
 			result = objectJsonIn.equals(objectJsonOut); 
 		} catch (Exception e) {
 			result = false;

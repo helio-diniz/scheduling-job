@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3] - 2020-01-09 
+
+### Added
+- Branch: `job_service`.
+
+
 ## [1.0.2] - 2020-01-08 
 
 ### Added
