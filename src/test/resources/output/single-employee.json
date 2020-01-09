@@ -1,1 +1,12 @@
-{"id":1,"name":"Marcos","surname":"Silvério","birthday":{"year":1974,"month":12,"day":2},"salary":12567.89,"employed":true}
+{
+  "id": 1,
+  "name": "Marcos",
+  "surname": "Silvério",
+  "birthday": {
+    "year": 1974,
+    "month": 12,
+    "day": 2
+  },
+  "salary": 12567.89,
+  "employed": true
+}

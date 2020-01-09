@@ -1,1 +1,38 @@
-[{"id":1,"name":"Marcos","surname":"Silvério","birthday":{"year":1974,"month":12,"day":2},"salary":12567.89,"employed":true},{"id":2,"name":"Ludmila","surname":"Amaral","birthday":{"year":1987,"month":7,"day":15},"salary":7890.77,"employed":true},{"id":3,"name":"Francisco","surname":"Moreira","birthday":{"year":2011,"month":3,"day":21},"salary":1670.93,"employed":false}]
+[
+  {
+    "id": 1,
+    "name": "Marcos",
+    "surname": "Silvério",
+    "birthday": {
+      "year": 1974,
+      "month": 12,
+      "day": 2
+    },
+    "salary": 12567.89,
+    "employed": true
+  },
+  {
+    "id": 2,
+    "name": "Ludmila",
+    "surname": "Amaral",
+    "birthday": {
+      "year": 1987,
+      "month": 7,
+      "day": 15
+    },
+    "salary": 7890.77,
+    "employed": true
+  },
+  {
+    "id": 3,
+    "name": "Francisco",
+    "surname": "Moreira",
+    "birthday": {
+      "year": 2011,
+      "month": 3,
+      "day": 21
+    },
+    "salary": 1670.93,
+    "employed": false
+  }
+]

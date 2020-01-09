@@ -1,1 +1,44 @@
-[{"id":1,"description":"Criação e Aplicação da nova migração de produtos","deadlineText":"2020-01-10 10:00:00","duration":2},{"id":2,"description":"Criação da API de Produtos","deadlineText":"2020-01-11 18:00:00","duration":6},{"id":3,"description":"Ciração da CRUD de Produto","deadlineText":"2020-01-12 10:00:00","duration":3},{"id":4,"description":"Criação do modelo de produto com persistência","deadlineText":"2020-01-10 12:00:00","duration":2},{"id":5,"description":"Criação do controlador e serviço de produto","deadlineText":"2020-01-10 18:00:00","duration":3},{"id":6,"description":"Criação dos testes de aceitação.","deadlineText":"2020-01-12 14:00:00","duration":5},{"id":7,"description":"Criação dos testes de integração.","deadlineText":"2020-01-11 18:00:00","duration":2}]
+[
+  {
+    "id": 1,
+    "description": "Criação e Aplicação da nova migração de produtos",
+    "deadlineText": "2020-01-10 10:00:00",
+    "duration": 2
+  },
+  {
+    "id": 2,
+    "description": "Criação da API de Produtos",
+    "deadlineText": "2020-01-11 18:00:00",
+    "duration": 6
+  },
+  {
+    "id": 3,
+    "description": "Ciração da CRUD de Produto",
+    "deadlineText": "2020-01-12 10:00:00",
+    "duration": 3
+  },
+  {
+    "id": 4,
+    "description": "Criação do modelo de produto com persistência",
+    "deadlineText": "2020-01-10 12:00:00",
+    "duration": 2
+  },
+  {
+    "id": 5,
+    "description": "Criação do controlador e serviço de produto",
+    "deadlineText": "2020-01-10 18:00:00",
+    "duration": 3
+  },
+  {
+    "id": 6,
+    "description": "Criação dos testes de aceitação.",
+    "deadlineText": "2020-01-12 14:00:00",
+    "duration": 5
+  },
+  {
+    "id": 7,
+    "description": "Criação dos testes de integração.",
+    "deadlineText": "2020-01-11 18:00:00",
+    "duration": 2
+  }
+]
