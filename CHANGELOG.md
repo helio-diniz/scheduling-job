@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.3] - 2020-01-09 
+
+### Added
+- New `JobService` class to implement the services for job.
+- New `JobServiceTest` test class with test cases below: 
+  - Service creation: `createJob`.
+  - Scheduling jobs loading: `getAllSchedulingJobs`, `getAllSchedulingJobsFromInvalidJSON`, `getAllSchedulingJobsFromInvalidLeadtimeJSON` and `getAllSchedulingJobsInexistingJSON`.
+  - Scheduling jobs saving: `saveSchedulingJobs`. 
+  - Schedule organization: `organizeProductSchedulingJobs`, `organizesSchedulingJobsFromInvalidLeadtimeJSON`, `organizeProductSchedulingJobs`, `organizeProductSchedulingJobsStartingOnJan10thAtMidday`, `organizeProductSchedulingJobsStartingOnJan11thAtEightOClock`, `organizeProductSchedulingJobsFinishingOnJanury12thAtTenOClock`, `organizeProductSchedulingJobsFinishingOnJanury11thAtEighteenOClock`, 
+- New `Application` class to demonstrate the application as proposed.  
+- Branch: `job_service`.
+
+
 ## [1.0.2] - 2020-01-08 
 
 ### Added
@@ -8,7 +21,7 @@
 - New `JobTest` test class with test cases below: 
   - Job model test cases: `createAJob`, `createAJobWithoutDeadline` and `createAJobWithAInvalidDeadlineText`. 
   - Job list test cases: `createAEmptyJobList`, `createAJobListWithJustOneJob`,  `createAJobListWithThreeJobs` and `createASortedJobListWithThreeJobs`.
-  - Schedule organization: `organizeASchedulingJobListWithThreeJobs`, `organizeASchedulingJobListWithThreeJobsStartingElevenOClock`, `organizeASchedulingJobListWithThreeJobsFinishingEightOClock`, `organizeASchedulingJobListWithThreeJobsWithInvalidPeriod` and `organizeAEmptySchedulingJobList`.
+  - Schedule organization: `organizeASchedulingJobListWithThreeJobs`, `organizeASchedulingJobListWithThreeJobsStartingHalfPastTwelve`, `organizeASchedulingJobListWithThreeJobsFinishingEightOClock`, `organizeASchedulingJobListWithThreeJobsWithInvalidPeriod` and `organizeAEmptySchedulingJobList`.
   - Branch: `job_list`.
   
 
